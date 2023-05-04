@@ -133,6 +133,17 @@ table {
   border-spacing: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 40px;
+  border: 1px solid black;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 1px 1px 2px;
+}
+
 .task {
   z-index: 2;
   position: fixed;
@@ -142,15 +153,34 @@ table {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  width: 400px;
+  width: 250px;
   height: 100%;
+  background-color: rgba(74, 74, 74, 0.203);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   border: 2px solid black;
   padding: 10px;
   transform: translate(-100%);
+  gap: 20px;
+  transition: 1s;
+  filter: blur(3px);
 }
 
-header {
-  padding: 20px;
+.bi.bi-x-lg {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.inputStyle {
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px;
+  width: 200px;
+}
+
+select {
+  border-radius: 5px;
 }
 
 .task_input {
@@ -159,6 +189,12 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   gap: 15px;
+}
+
+.task_filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .task_input_div {
@@ -171,16 +207,21 @@ main {
   z-index: 1;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 20px;
   gap: 10px;
 }
 
-main > * {
-  flex: 1 0 300px;
-}
-
 .container_tasks {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 200px;
   padding: 10px;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px;
 }/*# sourceMappingURL=style.css.map */
