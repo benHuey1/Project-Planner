@@ -9,7 +9,7 @@
     <title>Project planner</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./assets/js/script.js"></script>
+    <script type = "module" src="./assets/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -17,26 +17,26 @@
     </header>
     <aside class="task">
         <section class="task_input">
-            <button type="submit">+</button>
+            <button type="submit" class="task_submit">+</button>
             <div>
                 <label for="title_input">Title</label>
-                <input type="text" id="title_input">
+                <input type="text" id="title_input" class="task_input_element">
             </div>       
             <!-- <label for="task_input">Task</label>
             <input type="text" id="task_input"> -->
             <section class="task_input">
                 <select name="filter" id="task_input_element">
-                    <option value="Home">Home</option>
-                    <option value="Home">Work</option>
-                    <option value="Home">Hobby</option>
+                    <option value="Home" class="task_input_option">Home</option>
+                    <option value="Home" class="task_input_option">Work</option>
+                    <option value="Home" class="task_input_option">Hobby</option>
                 </select>
             <div>
                 <label for="date_input">Date</label>
-                <input type="text" id="date_input">
+                <input type="text" id="date_input" class="task_input_element">
             <div>
             <div>
                 <label for="label_input">Description</label>
-                <textarea name="label_input" id="label_input" cols="30" rows="10"></textarea>
+                <textarea name="label_input" id="label_input" cols="30" rows="10" class="task_input_element"></textarea>
             </div>
             <!-- <input type="text" id="label_input"> -->
         </section>
