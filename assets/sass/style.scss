@@ -1,22 +1,51 @@
+@import "./reset";
 .task {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    width: 400px;
+    height: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    transform: translate(-100%);
+}
+header {
+    padding: 20px;
 }
 .task_input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 10px;
-}
 
+    gap: 15px;
+}
+// .task_filter {
+//     // margin: 10px;
+// }
+
+.task_input_div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 main {
+    z-index: 1;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
 }
 main > * {
     flex: 1 0 300px;
+}
+.container_tasks {
+    border: 2px solid black;
+    padding: 10px;
 }
