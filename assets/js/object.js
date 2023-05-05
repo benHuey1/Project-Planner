@@ -1,2 +1,3 @@
-export let tasks =JSON.parse(localStorage.getItem('tasks')) || [] ; 
+export let tasks =JSON.parse(localStorage.getItem('tasks')) || [] ; //ok
+
 
