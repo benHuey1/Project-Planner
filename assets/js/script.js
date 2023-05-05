@@ -29,15 +29,20 @@ function renderTask(){
     card.innerHTML = ''; 
     tasks.forEach((taskToDo, index) => {
         card.innerHTML += `
-        <i class="bi ${title.ckecked ? 'bi-check-circle-fill' : 'bi-check-circle'}" data-action="check" ></i>
         <h2 class="task_name">${title.value}</h2>
-        <p class="task_category">${optionSelectedValue}</p>
+        <p class="task_category">${select_options[0] ? 'Home':(select_options[1] ? 'Work' : 'Hobby')}</p>
         <p class="task_date">${date.value}</p>
         <p class="task_description">${description.value}</p>
+        <select>
+            <option>To do </option>
+            <option>Doing </option>
+            <option>Done </option>
+        </select>
+        <i class="bi bi-trash3" data-action="delete"></i>
+
         `
     })
 }
-
 
 /* Event sur le bouton submit */
 const task_submit = document.querySelector('.task_submit');//Bouton submit '+'
@@ -47,7 +52,8 @@ function submit(event){//Add event click sur le bouton submit
     event.preventDefault(); 
     saveTask(); //Exécution de la fonction saveTask au click 
     renderTask();
-    console.log('test'); 
+    // console.log('test'); 
+    localStorage.setItem('tasks', JSON.stringify(tasks));//Save to localstorage
 }
 
 
@@ -55,7 +61,7 @@ function submit(event){//Add event click sur le bouton submit
 const select = document.querySelector('#task_input_element');
 const select_options = ["Home", "Work", "Hobby"]; 
 
-let optionSelected = document.querySelectorAll('.task_input_option'); 
+// let optionSelected = document.querySelectorAll('.task_input_option'); 
 
 for (let i =0; i<select_options.length; i++){
     let options = document.createElement('option'); 
@@ -66,7 +72,7 @@ for (let i =0; i<select_options.length; i++){
     select.appendChild(options); 
 } 
 const optionSelectedValue = select_options.map(x => x.valueOf(select_options)); 
-console.log(optionSelectedValue); //ok 
+// console.log(optionSelectedValue); //ok 
 
 
 /* Cibler les éléments */
@@ -76,8 +82,13 @@ function targetTask(event){
     const target = event.target;
     const taskId = Number(tasks.id) ; 
     const action = target.dataset.action ;
-    action === 'check' && checkTasks (taskId) ; 
+    action === 'delete' && deleteTasks (taskId) ;
 }
-function checkTasks(){
-    
+
+/* Suppresion des tâches */
+function deleteTasks(taskId){
+    tasks.splice(taskId, 1);
+    renderTask(); 
+    //Delete from the local storage
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
