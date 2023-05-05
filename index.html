@@ -9,7 +9,7 @@
     <title>Project planner</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./assets/js/script.js"></script>
+    <script defer type="module" src="./assets/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,22 +19,24 @@
     </header>
     <aside class="task" id="nav_task">
         <i class="bi bi-x-lg" id="nav_task_close"></i>
+        <h2></h2>
         <section class="task_input">
-            <button type="submit">+</button>
             <div class="task_input_div">
                 <label for="title_input">Title</label>
                 <input type="text" id="title_input" class="inputStyle">
             </div>       
             <!-- <label for="task_input">Task</label>
             <input type="text" id="task_input"> -->
+            <div class="task_input_div">                
                 <select name="filter" id="task_input_element">
                     <option value="Home">Home</option>
                     <option value="Home">Work</option>
                     <option value="Home">Hobby</option>
                 </select>
+            </div>
             <div class="task_input_div">
-                <label for="date_input">Date</label>
-                <input type="text" id="date_input" class="inputStyle">
+                <label for="date_input">Echeance</label>
+                <input type="date" id="date_input" class="inputStyle">
             <div>
             <div class="task_input_div">
                 <label for="label_input">Description</label>
@@ -44,17 +46,24 @@
         </section>
         <section class="task_filter">
             <h2>Filter :</h2>
-            <select name="filter" id="task_filter">
+            <select name="filter" id="task_filter_display">
                 <option value="Home">Home</option>
                 <option value="Home">Work</option>
                 <option value="Home">Hobby</option>
             </select>
+            <button type="submit" id="submit">submit</button>
         </section>
     </aside>
     <main class="container" id="container">
         <section class="container_tasks">
             <h2>Title</h2>
-            <p class="tasks_category">category 1</p>
+            <p class="tasks_category">Category</p>
+            <select name="filter" class="task_filter_element">
+                <option value="To do" name="To do">To do</option>
+                <option value="Doing"name="Doing">Doing</option>
+                <option value="Done"name="Done">Done</option>
+            </select>
+            <p class="date_output">Due time : </p>
             <p class="tasks_description">Description</p>
         </section>
     </main>
