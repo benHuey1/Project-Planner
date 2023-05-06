@@ -3,6 +3,7 @@ import { card } from './const.js';
 import { submit } from './submit_event.js';
 import { renderTask } from './render_function.js';
 import { targetTask, deleteTasks } from './delete_function.js';
+// import './filter_function.js'; 
 
 
 const task_submit = document.querySelector('.task_submit');//Bouton submit '+'
@@ -26,3 +27,5 @@ const optionSelectedValue = select_options.map(x => x.valueOf(select_options));
 
 task_submit.addEventListener('click', submit); 
 card.addEventListener('click', targetTask);
+
+// optionCategory.addEventListener('onchange', changeOption); 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="authors" content="Jodie Addis, Benjamin Huey">
+    <meta name="authors" content="Jodie Addis, Benjamin">
     <meta name="description" content="Création d'un planning">
     <title>Project planner</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -42,11 +42,14 @@
         </form>
         <section class="task_filter">
             <h2>Filter :</h2>
-            <select name="filter" id="task_filter" class="task_filter_option">
-                <option value="Home" class="filter_option">Home</option>
-                <option value="Work" class="filter_option">Work</option>
-                <option value="Hobby" class="filter_option">Hobby</option>
-            </select>
+            <form name="my-form" action="">
+                <select name="filter" id="task_filter" class="task_filter_option">
+                    <option value="Home" class="filter_option">Home</option>
+                    <option value="Work" class="filter_option">Work</option>
+                    <option value="Hobby" class="filter_option">Hobby</option>
+                </select>
+                <button class="filter_submit">Submit</button>
+            </form>
         </section>
     </aside>
     <main class="container">

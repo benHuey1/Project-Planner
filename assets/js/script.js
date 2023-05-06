@@ -1,10 +1,10 @@
-import { tasks } from './object.js';
-// import { saveTask } from './save_function.js';
-// import{submit} from './submit_event.js'; 
+// import { tasks } from './object.js';
+// // import { saveTask } from './save_function.js';
+// // import{submit} from './submit_event.js'; 
 
 
 
-let task_input = document.querySelectorAll('.task_input_element');
+// let task_input = document.querySelectorAll('.task_input_element');
 // console.log(task_input); 
 // const category = document.querySelector('.task_input_option'); 
 
@@ -68,7 +68,7 @@ let task_input = document.querySelectorAll('.task_input_element');
 //     select.appendChild(options); 
 // } 
 // const optionSelectedValue = select_options.map(x => x.valueOf(select_options)); 
-// // console.log(optionSelectedValue); //ok 
+// console.log(optionSelectedValue); //ok 
 
 /* Application de l'event 'change' sur les options */
 /* NE FONCTIONNE PAS */
@@ -76,9 +76,9 @@ let task_input = document.querySelectorAll('.task_input_element');
 // const optionCategory = document.querySelector('.task_input_option');
 // console.log(optionCategory); 
 
-// optionCategory.addEventListener('change', changeOption); 
+// optionCategory.addEventListener('onchange', changeOption); 
 
-// function changeOption (event){
+// export function changeOption (event){
 //     const optionSelected = document.querySelector('.task_category'); 
 //     optionSelected.textContent = `${event.target.value}`;
 // }
