@@ -1,7 +1,10 @@
 import { tasks } from "./object.js";
 import { renderTask } from "./render_function.js";
 
-
+/**
+ * 
+ * @param {*} event 
+ */
 export function targetTask(event){
     const target = event.target;
     const taskId = Number(tasks.id) ; 
@@ -9,7 +12,14 @@ export function targetTask(event){
     action === 'delete' && deleteTasks (taskId) ;
 }
 
-/* Suppresion des tâches */
+
+/**
+ * Définition de la fonction : deleteTasks permet de supprimer la card contenant la tâche, celle-ci est supprimée visuellement sur le site mais également en cache. 
+ * 
+ * @param {Number} taskId - Permet de cibler les taches dans l'objet tasks
+ * 
+ * @return {type} - description
+ */
 export function deleteTasks(taskId){
     tasks.splice(taskId, 1);
     renderTask(); 

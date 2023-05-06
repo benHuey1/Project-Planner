@@ -4,8 +4,6 @@ import { saveTask } from "./save_function.js";
 
 
 
-// task_submit.addEventListener('click', submit); 
-
 export function submit(event){//Add event click sur le bouton submit
     event.preventDefault(); 
     saveTask(); //Exécution de la fonction saveTask au click 

@@ -8,6 +8,7 @@ let description = document.querySelector('.task_input_description');
 // let card = document.querySelector('.container_tasks');
 let select = document.querySelector('#task_input_element'); //Sélection de l'input en select
 
+
 export function renderTask(){
     card.innerHTML = ''; 
     tasks.forEach((taskToDo, index) => {
