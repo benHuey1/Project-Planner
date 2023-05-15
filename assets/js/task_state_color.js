@@ -1,5 +1,5 @@
 let containerTask = document.querySelector(".container_tasks");
-let taskState = document.querySelector(".task_filter_element");
+let taskState = document.querySelector(".task_element");
 
 export function changeColorState() {
     // optionSelect.style.backgroundColor = "red";

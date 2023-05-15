@@ -1,4 +1,4 @@
-const navTask = document.getElementById("nav_task");
+const navTask = document.getElementById("task");
 export function openNavTask() {
     navTask.style.transform = " translate(0%)";
     navTask.style.filter = "blur(0px)";

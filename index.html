@@ -12,23 +12,33 @@
     <script defer type="module" src="./assets/js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- <i class="bi bi-list" id="nav_icon"></i> -->
         <i class="bi bi-file-plus" id="nav_icon"></i>
-        <h1>Project Planner</h1>
+        <h1>Your project planner</h1>
+        <p class="header_date" id="header_date"></p>
+        
+        <select name="filter" class="task_filter_display" id="task_filter_display" >
+            <option value="All"> - All filter -</option>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="Hobby">Hobby</option>
+        </select>
     </header>
-    <aside class="task" id="nav_task">
-        <i class="bi bi-x-lg" id="nav_task_close"></i>
-        <h2></h2>
-        <section class="task_input">
+    <aside class="task" id="task">
+        <i class="bi bi-x-lg" id="task_close"></i>
+        <img class="task_picture" src="https://img.icons8.com/external-nawicon-flat-nawicon/64/null/external-puzzle-business-nawicon-flat-nawicon.png">
+        <h2>heyyy</h2>
+        <form class="task_input">
             <div class="task_input_div">
-                <label for="title_input">Title</label>
-                <input type="text" id="title_input" class="inputStyle">
+                <label for="title_input">Task</label>
+                <input type="text" id="title_input" class="task_input_title">
             </div>       
             <!-- <label for="task_input">Task</label>
             <input type="text" id="task_input"> -->
             <div class="task_input_div">                
-                <select name="filter" id="task_input_element">
+                <select name="filter" class="task_input_element" id="task_input_element">
+                    <option value="Choose a filter"> - Choose a filter -</option>
                     <option value="Home">Home</option>
                     <option value="Home">Work</option>
                     <option value="Home">Hobby</option>
@@ -40,25 +50,25 @@
             <div>
             <div class="task_input_div">
                 <label for="label_input">Description</label>
-                <textarea name="label_input" id="label_input" cols="30" rows="10" class="inputStyle"></textarea>
+                <textarea name="label_input" id="label_input" cols="30" rows="10" class="task_input_description"></textarea>
             </div>
             <!-- <input type="text" id="label_input"> -->
-        </section>
+        </form>
         <section class="task_filter">
-            <h2>Filter :</h2>
-            <select name="filter" id="task_filter_display">
+            <!-- <h2>Filter :</h2> -->
+            <!-- <select name="filter" id="task_filter_display">
                 <option value="Home">Home</option>
                 <option value="Home">Work</option>
                 <option value="Home">Hobby</option>
-            </select>
+            </select> -->
             <button type="submit" id="submit">submit</button>
         </section>
     </aside>
     <main class="container" id="container">
-        <section class="container_tasks">
+        <!-- <section class="container_tasks">
             <h2>Title</h2>
-            <p class="tasks_category">Category</p>
-            <select name="filter" class="task_filter_element">
+            <p class="tasks_category">Category-Work</p>
+            <select name="filter" class="task_element">
                 <option value="To do" name="To do">To do</option>
                 <option value="Doing"name="Doing">Doing</option>
                 <option value="Done"name="Done">Done</option>
@@ -66,6 +76,28 @@
             <p class="date_output">Due time : </p>
             <p class="tasks_description">Description</p>
         </section>
+        <section class="container_tasks">
+            <h2>Title</h2>
+            <p class="tasks_category">Category-Home</p>
+            <select name="filter" class="task_element">
+                <option value="To do" name="To do">To do</option>
+                <option value="Doing"name="Doing">Doing</option>
+                <option value="Done"name="Done">Done</option>
+            </select>
+            <p class="date_output">Due time : </p>
+            <p class="tasks_description">Description</p>
+        </section>
+        <section class="container_tasks">
+            <h2>Title</h2>
+            <p class="tasks_category">Category-Hobby</p>
+            <select name="filter" class="task_element">
+                <option value="To do" name="To do">To do</option>
+                <option value="Doing"name="Doing">Doing</option>
+                <option value="Done"name="Done">Done</option>
+            </select>
+            <p class="date_output">Due time : </p>
+            <p class="tasks_description">Description</p>
+        </section> -->
     </main>
 </body>
 </html>
