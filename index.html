@@ -23,22 +23,12 @@
                 <label for="title_input">Task</label>
                 <input type="text" id="title_input" class="task_input_title">
             </div>       
-            <!-- <label for="task_input">Task</label>
-            <input type="text" id="task_input"> -->
-                <select name="filter" id="task_input_element">
-                    <!-- <option value="Home" class="task_input_option">Home</option>
-                    <option value="Home" class="task_input_option">Work</option>
-                    <option value="Home" class="task_input_option">Hobby</option> -->
+                <select name="filter" id="task_input_element" class="task_input_element">
                 </select>
-            <div>
-                <label for="date_input">Date</label>
-                <input type="text" id="date_input" class="task_input_date">
-            <div>
             <div>
                 <label for="label_input">Description</label>
                 <textarea name="label_input" id="label_input" cols="30" rows="10" class="task_input_description"></textarea>
             </div>
-            <!-- <input type="text" id="label_input"> -->
         </form>
         <section class="task_filter">
             <h2>Filter :</h2>
@@ -48,6 +38,7 @@
                     <option value="Work" class="filter_option">Work</option>
                     <option value="Hobby" class="filter_option">Hobby</option>
                 </select>
+                <button type="submit" class="filter_submit">Go</button>
             </form>
         </section>
     </aside>
