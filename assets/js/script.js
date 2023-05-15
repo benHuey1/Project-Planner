@@ -31,53 +31,5 @@ taskState.addEventListener("mouseup", changeColorState);
 // /* Filter */
 
 let filterSelect = document.getElementById("task_filter_display");
-// function filterMouse() {
-//     if (filterSelect == "Home") {
-//         console.log("Home");
-//         // showHomeTask();
-//     } else if (filterSelect == "Work") {
-//         console.log("Work");
-
-//         // showWorkTask();
-//     } else if (filterSelect == "Hobby") {
-//         console.log("Hobby");
-//         // showHobbyTask();
-//     }
-// }
 
 filterSelect.addEventListener("mouseup", updateFilters);
-
-// /*A supprimer*/
-// const h1 = document.querySelector("h1");
-// const main = document.querySelector("main");
-// h1.addEventListener("click", test);
-
-// console.log(filterSelect);
-
-// // Réinitialiser l'affichage
-// function clearDisplay() {
-//     sectionMain.innerHTML = "";
-// }
-// /* Filter-All */
-// function showAllTasks() {
-//     const AllTasks = document.querySelectorAll(".container_tasks");
-
-//     for (let i = 0; i < AllTasks.length; i++) {
-//         AllTasks[i].style.display = "block";
-//     }
-
-//     filter = "tout";
-// }
-
-// // fonction pour mettre à jour les filtres et afficher les résultats filtrés
-// function updateFilters() {
-//     if (filter == "To do") {
-//         showWokSections();
-//     } else if (filter == "Doing") {
-//         showFishSections();
-//     } else if (filter == "Done") {
-//         showDessertSections();
-//     } else {
-//         showAllSections();
-//     }
-// }
