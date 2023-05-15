@@ -1,7 +1,6 @@
 @import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@900&display=swap");
 body {
-    // background: linear-gradient(to right, rgb(0, 90, 167), rgb(255, 253, 228));
     position: relative;
     width: 100%;
     height: 100%;
@@ -22,7 +21,6 @@ body::after {
         rgb(255, 239, 186),
         rgb(255, 255, 255)
     );
-    // background: linear-gradient(to right, rgb(0, 180, 219), rgb(0, 131, 176));
     opacity: 0.5;
 }
 
@@ -34,24 +32,17 @@ body::after {
     line-height: 50px;
     padding: 20px;
     gap: 40px;
-    // border: 2px solid black;
-    // border-radius: 0px 0px 15px 15px;
-    // box-shadow: 1px 1px 2px;
     box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
-    // background: #a4d0a4;
     background: #6a9fef;
-    // color: white;
     font-size: large;
 }
 h1 {
     font-family: "Dancing Script", cursive;
-    // font-family: "Fraunces", serif;
     font-size: xx-large;
     font-weight: 600;
 }
 .header_date {
     position: absolute;
-    // top: 30px;
     right: 15px;
     font-family: cursive, sans-serif;
     color: white;
@@ -79,7 +70,6 @@ option {
     align-items: flex-start;
     width: 250px;
     height: 100%;
-    // background-color: transparent;
     background-color: rgba(74, 74, 74, 0.203);
     backdrop-filter: blur(15px);
     border: 2px solid transparent;
@@ -91,7 +81,6 @@ option {
 }
 .bi.bi-file-plus {
     position: absolute;
-    // top: 30px;
     left: 15px;
     scale: 1.5;
 }
@@ -119,15 +108,8 @@ option {
     box-shadow: 1px 1px 2px;
     width: 200px;
 }
-// .inputStyle {
-//     border-radius: 8px;
-//     padding: 5px;
-//     box-shadow: 1px 1px 2px;
-//     width: 200px;
-// }
 select {
     border-radius: 5px;
-    // padding: 5px;
 }
 .task_input {
     display: flex;
@@ -159,19 +141,8 @@ main {
     gap: 20px;
     min-height: 615px;
     font-family: cursive, sans-serif;
-    // background: linear-gradient(to right, rgb(0, 90, 167), rgb(255, 253, 228));
-    // background-image: url(https://www.wimi-teamwork.com/static/medias/logiciels-collaboration-1280x640-1.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
 }
-
-// main > * {
-//     flex: 1 0 100px;
-// }
 .container_tasks {
-    //a supp margin
-    // margin-left: 200px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
