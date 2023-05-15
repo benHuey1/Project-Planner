@@ -3,7 +3,7 @@ import { card } from './const.js';
 import { submit } from './submit_event.js';
 import { renderTask } from './render_function.js';
 import { targetTask, deleteTasks } from './delete_function.js';
-import { submitFilter } from './submit_filter.js';
+// import { submitFilter } from './submit_filter.js';
 
 const task_submit = document.querySelector('.task_submit');//Bouton submit '+'
 const select_options = ["Home", "Work", "Hobby"]; 
@@ -24,4 +24,4 @@ for (let i =0; i<select_options.length; i++){
 
 task_submit.addEventListener('click', submit); 
 card.addEventListener('click', targetTask);
-filterButton.addEventListener('submit', submitFilter); 
+// filterButton.addEventListener('submit', submitFilter); 

@@ -13,10 +13,23 @@
     <script type = "module" defer src="./assets/js/script_2.js"></script>
 </head>
 <body>
-    <header>
-        <i class="bi bi-list"></i>
+    <header class="header">
+        <!-- <i class="bi bi-list" id="nav_icon"></i> -->
+        <i class="bi bi-file-plus" id="nav_icon"></i>
+        <h1>Your project planner</h1>
+        <p class="header_date" id="header_date"></p>
+        
+        <select name="filter" class="task_filter_display" id="task_filter_display" >
+            <option value="All"> - All filter -</option>
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="Hobby">Hobby</option>
+        </select>
     </header>
     <aside class="task">
+        <i class="bi bi-x-lg" id="task_close"></i>
+        <img class="task_picture" src="https://img.icons8.com/external-nawicon-flat-nawicon/64/null/external-puzzle-business-nawicon-flat-nawicon.png">
+        <h2>heyyy</h2>
         <form class="task_input">
             <button type="submit" class="task_submit">+</button>
             <div>

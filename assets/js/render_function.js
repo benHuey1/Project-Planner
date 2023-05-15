@@ -13,10 +13,10 @@ export function renderTask(){
     card.innerHTML = ''; 
     tasks.forEach((taskToDo, index) => {
         card.innerHTML += `
-        <h2 class="task_name">${title.value}</h2>
+        <h2>${title.value}</h2>
         <p class="task_category">${select.value}</p>
-        <p class="task_description">${description.value}</p>
-        <select class="task_statut">
+        <p >${description.value}</p>
+        <select class="task_element">
             <option>To do </option>
             <option>Doing </option>
             <option>Done </option>
@@ -25,5 +25,3 @@ export function renderTask(){
         `
     })
 }
-
-
